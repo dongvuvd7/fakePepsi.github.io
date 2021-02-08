@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="1.css" />
+    <link rel="stylesheet" href="../fontawesome-free-5.14.0-web/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-4.5.2-dist/bootstrap-4.5.2-dist/css/bootstrap.css"
+    />
+  </head>
+
+  <body>
+    <section class="sec">
+      <header>
+        <a href="#"><img src="images/images/logo.png" class="logo" /></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">What's new</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+
+      <div class="content">
+        <div class="textBox">
+            <h2>That's What
+                <br/>
+                <span> I like</span>
+            </h2>
+            <p>Chuyện là anh thanh niên này thèm đi học nên mẹ mới đặt thử vài buổi cho quen dần thì ngay buổi học đầu tiên mẹ gọi dậy anh lại bảo không muốn thức rồi ngủ miệt mài đến đầu giờ chiều thì vùng dậy đòi đi học =)))</p>
+            <a href="#">View All Products</a>
+        </div>
+        <div class="imgBox">
+            <img src="images/images/pepsi001.png" class="pepsi">
+        </div>
+      </div>
+
+      <ul class="thumb">
+          <li><img src="images/images/pepsi001.png"  onmousemove="imgSlider('images/images/pepsi001.png'); changeBgColor('#0062be')"></li>
+          <li><img src="images/images/pepsi002.png"  onmousemove="imgSlider('images/images/pepsi002.png'); changeBgColor('#e60c2c')"></li>
+          <li><img src="images/images/pepsi003.png"  onmousemove="imgSlider('images/images/pepsi003.png'); changeBgColor('#1e1e1e')"></li>
+
+      </ul>
+      <ul class="sci">
+        <li><a href="#"><img src="images/images/facebook.png" ></a></li>
+        <li><a href="#"><img src="images/images/instagram.png" ></a></li>
+        <li><a href="#"><img src="images/images/twitter.png" ></a></li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything){
+        document.querySelector('.pepsi').src = anything;
+      }
+      function changeBgColor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+      }
+    </script>
+  </body>
+</html>
